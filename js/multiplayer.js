@@ -8,6 +8,7 @@ SENDBTN.addEventListener("click", function (e) {
     dibujarGuiones();
     mostrarTableroJuego();
     verificarTecla();
+    verificarTeclaMobile();
     console.log(palabraSorteada);
   } else {
     Swal.fire({
