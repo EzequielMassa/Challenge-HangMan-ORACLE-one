@@ -19,7 +19,7 @@ function ventanaJuegospMobile() {
 function verificarTeclaMobile() {
   MOBILEINPUT.addEventListener("input", function (e) {
     setTimeout(() => {
-      MOBILEINPUT.value = " ";
+      MOBILEINPUT.value = "";
     }, 200);
     let letraPresionada = e.data;
     letraSeleccionada = letraPresionada;
