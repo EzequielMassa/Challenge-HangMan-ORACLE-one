@@ -10,13 +10,22 @@ const FORM = document.querySelector("#form-container");
 const INPUT = document.querySelector("#input-main");
 const SENDBTN = document.querySelector("#palabra-send");
 const CANCELBTN = document.querySelector("#cancel");
+const MOBILEINPUT = document.querySelector("#mobile-input");
 
 singlePlayerBtn.addEventListener("click", function () {
-  ventanaJuegosp();
-  sortearPalabra(LISTAPALABRAS);
-  dibujarGuiones();
-  verificarTecla();
-  console.log(palabraSorteada);
+  if (window.matchMedia("(min-width: 600px)").matches) {
+    ventanaJuegosp();
+    sortearPalabra(LISTAPALABRAS);
+    dibujarGuiones();
+    verificarTecla();
+    console.log(palabraSorteada);
+  } else {
+    ventanaJuegospMobile();
+    sortearPalabra(LISTAPALABRAS);
+    dibujarGuiones();
+    verificarTeclaMobile();
+    console.log(palabraSorteada);
+  }
 });
 
 multiPlayerBtn.addEventListener("click", function (e) {

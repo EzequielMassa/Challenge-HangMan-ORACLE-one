@@ -362,7 +362,11 @@ cursor: pointer;
 display: none;
 }
 
-
+.mobile-input {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
 
 
 @media only screen and (max-width: 1440px) {
