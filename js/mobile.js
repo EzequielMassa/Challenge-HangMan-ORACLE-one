@@ -21,7 +21,7 @@ function verificarTeclaMobile() {
     setTimeout(() => {
       MOBILEINPUT.value = " ";
     }, 200);
-    let letraPresionada = e.value;
+    let letraPresionada = e.value.toUpperCase();
     letraSeleccionada = letraPresionada;
     let padron = /[A-Z]/g;
     let resultadoPadron = padron.test(letraPresionada);
