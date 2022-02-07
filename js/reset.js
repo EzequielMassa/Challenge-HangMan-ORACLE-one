@@ -4,7 +4,6 @@ function resetsp() {
   ctx.clearRect(0, 0, 294, 353);
   letraErradaOutput.innerHTML = "";
   letrasIncorrectas = "";
-  console.log(palabraSorteada);
   intentos = 0;
 }
 

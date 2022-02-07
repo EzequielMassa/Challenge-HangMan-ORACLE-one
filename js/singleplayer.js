@@ -57,8 +57,6 @@ function dibujarPalabra() {
 
   outputGuiones.innerHTML = palabraGuiones;
 
-  console.log(outputGuiones.textContent);
-
   if (fallo) {
     dibujarPaloBase();
     comprobarLetraIncorrecta();

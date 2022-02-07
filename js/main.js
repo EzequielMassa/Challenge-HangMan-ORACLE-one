@@ -18,13 +18,11 @@ singlePlayerBtn.addEventListener("click", function () {
     sortearPalabra(LISTAPALABRAS);
     dibujarGuiones();
     verificarTecla();
-    console.log(palabraSorteada);
   } else {
     ventanaJuegospMobile();
     sortearPalabra(LISTAPALABRAS);
     dibujarGuiones();
     verificarTeclaMobile();
-    console.log(palabraSorteada);
   }
 });
 

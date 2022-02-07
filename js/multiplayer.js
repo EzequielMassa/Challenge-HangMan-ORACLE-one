@@ -8,7 +8,6 @@ SENDBTN.addEventListener("click", function (e) {
     mostrarTableroJuego();
     verificarTecla();
     verificarTeclaMobile();
-    console.log(palabraSorteada);
   } else {
     Swal.fire({
       position: "center",
