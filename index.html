@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hangman game</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+     <link rel="stylesheet" href="node_modules/alertifyjs/build/css/alertify.css" />
+    <script src="node_modules/alertifyjs/build/alertify.js"></script>  
+     <link rel="stylesheet" href="node_modules/alertifyjs/build/css/themes/semantic.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+
+      <div class="logo-container">
+        <a href="https://www.aluracursos.com/" target="blank">
+          <img src="images/logo.png" alt="page logo" />
+        </a>
+      </div>
+
+      <div class="titulo">
+        <h1>Hangman Game</h1>
+      </div>
+
+      <div class="back-img"><img src="images/hangman.png" alt="imagen ahorcado"></div>
+
+      <div class="main-btns-container">
+        <button class="btn" id="single-player-btn">
+          <a href="#">Single Player</a>
+        </button>
+        <button class="btn" id="multi-player-btn">
+          <a href="#">Multi Player</a>
+        </button>
+      </div>
+
+      <div class="tablero hide">
+        <div id="canvas-container" class="canvas-container">
+          <canvas
+            id="ahorcado"
+            class="canvas-main"
+            height="360px"
+            width="294px"
+          ></canvas>
+        </div>
+
+        <div class="words-container">
+          <div class="letra-guiones-container">
+            <span id="letra-guiones" class="letra-guiones"></span>
+          </div>
+          <div class="letras-incorrectas-container">
+            <span id="letras-incorrectas" class="letras-incorrectas"></span>
+          </div>
+        </div>
+
+        <div id="second-btn-container" class="sec-btn-container">
+          <button class="sec-btns" id="new-game-btn">
+            <a href="#">Nuevo Juego</a>
+          </button>
+          <button class="sec-btns hide new-mp" id="newmp-game-btn">
+            <a href="#">Nuevo Juego</a>
+          </button>
+          <button class="sec-btns" id="end-game-btn">
+            <a href="#">Desistir</a>
+          </button>
+        </div>
+
+        <div id="menu-btn" class="m-btn">
+         </button>
+          <button class=" btn menu-btns" id="main-menu-btn">
+            <a href="">Volver al Menu</a>
+          </button>
+      </div>
+      
+      </div>
+      
+      <div>
+        <div class="form-container hide" id="form-container">
+          <input type="text" class="input-main" id="input-main" placeholder="Ingrese una palabra" maxlength="8">
+          <input type="submit" class="palabra-send" id="palabra-send" value="Guardar y empezar">
+          <button class="cancel-btn" id="cancel">cancelar</button>
+          <div class="info-container">
+            <img src="images/Vector.png" alt="info">
+            <span class="info-text">Máx. de 8 letras</span>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/palabrassingleplayer.js"></script>
+    <script type="text/javascript" src="js/singleplayerwindow.js"></script>
+    <script type="text/javascript" src="js/singleplayer.js"></script>
+    <script type="text/javascript" src="js/multiplayerwindow.js"></script>
+    <script type="text/javascript" src="js/multiplayer.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/reset.js"></script>
+    <script type="text/javascript" src="js/endgame.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </body>
+</html>
+
