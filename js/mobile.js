@@ -20,7 +20,8 @@ function verificarTeclaMobile() {
   MOBILEINPUT.addEventListener("input", function (e) {
     setTimeout(() => {
       MOBILEINPUT.value = "";
-    }, 200);
+      MOBILEINPUT.focus();
+    }, 150);
     let letraPresionada = e.data;
     letraSeleccionada = letraPresionada;
     let padron = /[A-Z]/g;
