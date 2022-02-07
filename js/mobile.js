@@ -21,6 +21,7 @@ function verificarTeclaMobile() {
     setTimeout(() => {
       MOBILEINPUT.value = "";
       MOBILEINPUT.focus();
+      MOBILEINPUT.select();
     }, 150);
     let letraPresionada = e.data;
     letraSeleccionada = letraPresionada;
