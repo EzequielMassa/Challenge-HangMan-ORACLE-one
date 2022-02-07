@@ -698,8 +698,7 @@ display: none;
 }
 
 .pie-pagina {
- position: static;
- top: 0;
+display: none;
 }
 
 }

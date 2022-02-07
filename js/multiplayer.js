@@ -1,6 +1,7 @@
 SENDBTN.addEventListener("click", function (e) {
   e.preventDefault;
   palabraSorteada = INPUT.value;
+  INPUT.focus();
   let pattern = /[^A-Z]/g;
   let patternResult = pattern.test(palabraSorteada);
   if (patternResult == false) {
@@ -17,7 +18,8 @@ SENDBTN.addEventListener("click", function (e) {
       timer: 2000,
     });
     e.preventDefault;
-    INPUT.value = " ";
+    INPUT.value = "";
+    INPUT.focus();
     INPUT.select();
   }
 });
