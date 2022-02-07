@@ -17,7 +17,7 @@ function ventanaJuegospMobile() {
 }
 
 function verificarTeclaMobile() {
-  window.addEventListener("input", function (e) {
+  MOBILEINPUT.addEventListener("input", function (e) {
     let letraPresionada = e.data;
     letraSeleccionada = letraPresionada;
     let padron = /[A-Z]/g;
