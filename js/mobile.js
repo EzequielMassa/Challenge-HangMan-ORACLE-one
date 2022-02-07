@@ -18,10 +18,10 @@ function ventanaJuegospMobile() {
 
 function verificarTeclaMobile() {
   MOBILEINPUT.addEventListener("input", function (e) {
-    let letraPresionada = e.value;
     setTimeout(() => {
-      MOBILEINPUT.value = "";
+      MOBILEINPUT.value = " ";
     }, 200);
+    let letraPresionada = e.value;
     letraSeleccionada = letraPresionada;
     let padron = /[A-Z]/g;
     let resultadoPadron = padron.test(letraPresionada);
