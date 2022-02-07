@@ -366,6 +366,25 @@ display: none;
   display: none;
 }
 
+.pie-pagina {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+color: #0A3871;
+}
+
+.pie-pagina-logo{
+  background-color: #0A3871;
+  width: 16px;
+}
+
+
 @media only screen and (max-width: 1440px) {
 main {
   width: 768px;
@@ -676,6 +695,11 @@ display: none;
   position: absolute;
   top: 475px;
   left: 100px
+}
+
+.pie-pagina {
+ position: static;
+ top: 0;
 }
 
 }
