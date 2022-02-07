@@ -1,13 +1,3 @@
-// if(window.matchMedia("(min-width: 600px)").matches) {
-
-// singlePlayerBtn.addEventListener("click", function () {
-//   ventanaJuegosp();
-//   sortearPalabra(LISTAPALABRAS);
-//   dibujarGuiones();
-//   verificarTecla();
-//   console.log(palabraSorteada);
-// });
-// }
 function ventanaJuegospMobile() {
   BTNS.classList.add("hide");
   TABLERO.classList.remove("hide");
@@ -19,7 +9,6 @@ function verificarTeclaMobile() {
   MOBILEINPUT.addEventListener("input", function (e) {
     setTimeout(() => {
       MOBILEINPUT.value = "";
-      MOBILEINPUT.focus();
     }, 150);
     let letraPresionada = e.data;
     letraSeleccionada = letraPresionada;

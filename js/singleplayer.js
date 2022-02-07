@@ -99,7 +99,13 @@ function comprobarLetraIncorrecta() {
       .replace("Enter", "");
     intentos++;
   } else {
-    alertify.error("YA INGRESASTE ESA LETRA!");
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "YA INGRESASTE ESA LETRA",
+      showConfirmButton: false,
+      timer: 1000,
+    });
   }
 }
 
