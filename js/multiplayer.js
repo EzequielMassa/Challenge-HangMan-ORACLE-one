@@ -1,6 +1,5 @@
 SENDBTN.addEventListener("click", function (e) {
   e.preventDefault;
-  INPUT.select();
   palabraSorteada = INPUT.value;
   let pattern = /[^A-Z]/g;
   let patternResult = pattern.test(palabraSorteada);
