@@ -362,12 +362,9 @@ cursor: pointer;
 display: none;
 }
 
-.mobile-input {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(243, 12, 12);
+.mobile-input{
+  display: none;
 }
-
 
 @media only screen and (max-width: 1440px) {
 main {
@@ -564,14 +561,14 @@ top: 451px;
 
 .canvas-container {
 left: 44.68px;
-top: 56px;
+top: 46px;
 }
 
 .words-container {
 width: 304px;
 height: 116px;
 left: 36px;
-top: 426px;
+top: 416px;
 }
 
 .letra-guiones{
@@ -590,7 +587,7 @@ flex-direction: column;
 width: 343px;
 height: 150px;
 left: 16px;
-top: 506px;
+top: 496px;
 }
 
 
@@ -618,7 +615,7 @@ position: absolute;
 width: 200px;
 height: 57px;
 left: -150px;
-top: 150px;
+top: 125px;
 overflow: hidden;
 padding: 0;
 text-align: right;
@@ -672,4 +669,13 @@ cursor: pointer;
 .hide {
 display: none;
 }
+.mobile-input {
+  display: block;
+  width: 160px;
+  background-color: transparent;
+  position: absolute;
+  top: 465px;
+  left: 100px
+}
+
 }

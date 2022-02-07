@@ -13,7 +13,6 @@ function ventanaJuegospMobile() {
   TABLERO.classList.remove("hide");
   NEWSPGAME.classList.remove("hide");
   NEWMPGAME.classList.add("hide");
-  MOBILEINPUT.classList.remove("hide");
 }
 
 function verificarTeclaMobile() {
@@ -21,7 +20,6 @@ function verificarTeclaMobile() {
     setTimeout(() => {
       MOBILEINPUT.value = "";
       MOBILEINPUT.focus();
-      MOBILEINPUT.select();
     }, 150);
     let letraPresionada = e.data;
     letraSeleccionada = letraPresionada;
